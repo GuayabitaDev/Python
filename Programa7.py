@@ -5,7 +5,6 @@ print(Title)
 
 Correct = "Respuesta Correcta!"
 Wrong = "Respuesta Incorrecta!"
-Maybe = "Respuesta Posible!"
 Invalid = "Respuesta Invalida!"
 Score = 0
 
@@ -105,22 +104,24 @@ Q5 = input("IMPORTANTE: Quien es el mas guapo de Panda? \n"
            "C - Todas las anteriores\n")
 
 if Q5 == "A":
-    print(Maybe)
-    Score += 10
+    print(Wrong)
+    Score += 0
 
 elif Q5 == "B":
     print(Correct)
     Score += 20
 
 elif Q5 == "C":
-    print(Maybe)
-    Score += 10
+    print(Wrong)
+    Score += 0
 
 else:
     print(Invalid)
 
 #----------------------------------------------------------------------------------------
-
 print("Tu puntuacion es de", Score)
+
+if Score == 100:
+    print("La respuesta siempre es Tulio!")
 
 #----------------------------------------------------------------------------------------
