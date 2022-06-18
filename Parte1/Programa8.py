@@ -18,7 +18,7 @@ Pokemon = input("Cual es tu eleccion? \n")
 
 if Pokemon == "A":
     print("Seleccionaste a Greninja, estas en desventaja pero aun asi este combate no es imposible! \n")
-    CombateInicial = int(input("El combate empezo! Ash saca a Pikachu y tu a Greninja, que decides? \n"
+    CombateInicial = (input("El combate empezo! Ash saca a Pikachu y tu a Greninja, que decides? \n"
                           "A - Atacar \n"
                           "B - Bolsa \n"
                           "C - Huir \n"
@@ -28,7 +28,7 @@ if Pokemon == "A":
         YourHP -= 50
         EnemyHP -= 15
 
-        CombateA1 = int(input("Cual es tu siguente movimiento? \n"
+        CombateA1 = (input("Cual es tu siguente movimiento? \n"
                               "A - Atacar \n"
                               "B - Bolsa \n"
                               "C - Huir \n"))
@@ -44,7 +44,7 @@ if Pokemon == "A":
         print("Sacaste una capsula de Defensa X y tu defensa sube mucho, aun asi tu enemigo contrataca y te quita 20HP \n")
         YourHP -= 20
         
-        CombateB1 = int(input("Cual es tu siguente movimiento? \n"
+        CombateB1 = (input("Cual es tu siguente movimiento? \n"
                               "A - Atacar \n"
                               "B - Bolsa \n"
                               "C - Huir \n"))
@@ -57,7 +57,7 @@ if Pokemon == "A":
             print("Sacas otra Capsula de Defensa X y tu defensa vuelve a subir mucho, pero tu enemigo contrataca y te baja 10HP \n")
             YourHP -= 10
 
-            CombateB2 = int(input("Cual es tu siguiente movimiento? \n"
+            CombateB2 = (input("Cual es tu siguiente movimiento? \n"
                                   "A - Atacar \n"
                                   "B - Bolsa \n"
                                   "C - Huir \n"))
